@@ -59,10 +59,10 @@ Additional MySQL access:
 
 ## Domains
 
-By default, the site is accessible by using parent directory name as domain name with `.dev` tld. For example, if the boilerplate is installed inside `foobar` directory, the site then will be accessible on http://foobar.dev, Additionally, two subdomains will be available as shortcut to phpMyAdmin and Mailhog respectively:
+By default, the site is accessible by using parent directory name as domain name with `.ved` tld. For example, if the boilerplate is installed inside `foobar` directory, the site then will be accessible on http://foobar.ved, Additionally, two subdomains will be available as shortcut to phpMyAdmin and Mailhog respectively:
 
-* http://mail.foobar.dev
-* http://db.foobar.dev
+* http://mail.foobar.ved
+* http://db.foobar.ved
 
 ## Credits
 

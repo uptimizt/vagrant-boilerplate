@@ -8,7 +8,7 @@
 Vagrant.configure(2) do |config|
   # Store directory name as reference to sitename
   vagrant_sitename = File.basename(Dir.pwd); #taken from VVV
-  vagrant_domain = "#{vagrant_sitename}.dev"
+  vagrant_domain = "#{vagrant_sitename}.ved"
   vagrant_ip = "192.168.32." + rand(256).to_s
 
   # The most common configuration options are documented and commented below.
