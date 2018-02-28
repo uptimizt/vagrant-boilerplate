@@ -8,6 +8,11 @@ time_start="$(date +%s)"
 # Get domain name passed from Vagrantfile
 vagrant_domain=$1
 
+# Remove and clear Apache2 components
+echo "Remove Apache2 components..."
+sudo apt-get remove apache2*
+sudo apt-get autoremove
+
 # Add additional sources for packages
 echo "Updating package sources..."
 ln -sf /srv/config/apt-sources-extra.list /etc/apt/sources.list.d/apt-sources-extra.list
