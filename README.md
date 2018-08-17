@@ -12,9 +12,10 @@ This is a personal Vagrant setup that I use for each project that I manage. It's
 * [Vagrant](https://www.vagrantup.com/)
 * [Vagrant::Hostsupdater](https://github.com/cogitatio/vagrant-hostsupdater)
 
-> **If you are using Windows, you may need to enable hardware virtualization (VT-x). It can usually be enabled via your BIOS. If you are using Hyper-V on a UEFI system you may additionally need to disable Hyper-V in order to access VT-x.**
-
 _Note: Vagrant::Hostsupdater is optional to automatically add the entry to the hosts file. If you skip that, you will need to manually edit the hosts file and add the related entry yourself._
+
+
+> **If you are using Windows, you may need to enable hardware virtualization (VT-x). It can usually be enabled via your BIOS. If you are using Hyper-V on a UEFI system you may additionally need to disable Hyper-V in order to access VT-x.**
 
 
 ## Usage
