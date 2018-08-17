@@ -1,6 +1,6 @@
 # Vagrant Boilerplate
 
-This is a personal Vagrant setup that I use for each project that I manage. It's basic LEMP stack on Ubuntu 14.04 with a few additions such as Composer, Node.js and WP-CLI ready at the get-go.
+This is a personal Vagrant setup that I use for each project that I manage. It's basic LEMP stack on Ubuntu 16.04 with a few additions such as Composer, Node.js and WP-CLI ready at the get-go.
 
 
 ## Requirement
