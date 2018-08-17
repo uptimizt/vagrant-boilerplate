@@ -2,9 +2,6 @@
 
 This is a personal Vagrant setup that I use for each project that I manage. It's basic LEMP stack on Ubuntu 14.04 with a few additions such as Composer, Node.js and WP-CLI ready at the get-go.
 
-## Why another boilerplate?
-
-[VVV](https://github.com/Varying-Vagrant-Vagrants/VVV) is a fantastic Vagrant setup, where much of the provisioning of this setup is based on. However, VVV provides lot of things out of the box which I don't necessarily require in my development workflow, plus it is catered more on WordPress development. On the other hand, I would only need a simple LEMP stack, that also works well on my Windows machine.
 
 ## Requirement
 
@@ -67,6 +64,11 @@ By default, the site is accessible by using parent directory name as domain name
 
 * http://mail.foobar.lcl
 * http://db.foobar.lcl
+
+## Why another boilerplate?
+
+[VVV](https://github.com/Varying-Vagrant-Vagrants/VVV) is a fantastic Vagrant setup, where much of the provisioning of this setup is based on. However, VVV provides lot of things out of the box which I don't necessarily require in my development workflow, plus it is catered more on WordPress development. On the other hand, I would only need a simple LEMP stack, that also works well on my Windows machine.
+
 
 ## Credits
 
