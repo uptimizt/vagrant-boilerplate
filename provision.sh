@@ -76,7 +76,12 @@ apt-get install -y \
     zip
 
 # Install phpmyadmin separately
-apt-get install -y phpmyadmin
+apt-get --no-install-recommends install -y phpmyadmin
+
+# Remove and clear Apache2 components
+echo "Remove Apache2 components..."
+sudo apt-get remove apache2*
+sudo apt-get autoremove
 
 # Install Composer
 if [ ! -f /usr/local/bin/composer ]; then

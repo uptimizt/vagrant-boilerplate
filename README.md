@@ -1,12 +1,9 @@
 # Vagrant Boilerplate
 
-This is a personal Vagrant setup that I use for each project that I manage. It's basic LEMP stack on Ubuntu 14.04 with a few additions such as Composer, Node.js and WP-CLI ready at the get-go.
+This is a personal Vagrant setup that I use for each project that I manage. It's basic LEMP stack on Ubuntu 16.04 with a few additions such as Composer, Node.js and WP-CLI ready at the get-go.
 
-## Why another boilerplate?
 
-[VVV](https://github.com/Varying-Vagrant-Vagrants/VVV) is a fantastic Vagrant setup, where much of the provisioning of this setup is based on. However, VVV provides lot of things out of the box which I don't necessarily require in my development workflow, plus it is catered more on WordPress development. On the other hand, I would only need a simple LEMP stack, that also works well on my Windows machine.
-
-## Requirement
+# Requirement
 
 * [VirtualBox](https://www.virtualbox.org/)
 * [Vagrant](https://www.vagrantup.com/)
@@ -14,7 +11,11 @@ This is a personal Vagrant setup that I use for each project that I manage. It's
 
 _Note: Vagrant::Hostsupdater is optional to automatically add the entry to the hosts file. If you skip that, you will need to manually edit the hosts file and add the related entry yourself._
 
-## Usage
+
+> **If you are using Windows, you may need to enable hardware virtualization (VT-x). It can usually be enabled via your BIOS. If you are using Hyper-V on a UEFI system you may additionally need to disable Hyper-V in order to access VT-x.**
+
+
+# Usage
 
 ```
 git clone https://github.com/fsylum/vagrant-boilerplate <project-name>
@@ -24,7 +25,7 @@ vagrant up
 
 All Vagrant commands like `vagrant halt`, `vagrant destroy` and `vagrant suspend` are applicable.
 
-## Credentials
+# Credentials
 
 MySQL root:
 
@@ -36,6 +37,17 @@ Additional MySQL access:
 **User**: `vagrant`
 **Password**: `password`
 **Database**: `vagrant`
+
+# FAQ
+
+## How disable password for everyday start VM on macOS and Linux?
+
+For add domains in /etc/hosts - need sudo password.
+You can change Vagrantfile, replace random on static ip address
+After that uncomment the command:
+```
+# config.hostsupdater.remove_on_suspend = false
+```
 
 ## What's Included?
 
@@ -59,10 +71,15 @@ Additional MySQL access:
 
 ## Domains
 
-By default, the site is accessible by using parent directory name as domain name with `.dev` tld. For example, if the boilerplate is installed inside `foobar` directory, the site then will be accessible on http://foobar.dev, Additionally, two subdomains will be available as shortcut to phpMyAdmin and Mailhog respectively:
+By default, the site is accessible by using parent directory name as domain name with `.lh` tld. For example, if the boilerplate is installed inside `foobar` directory, the site then will be accessible on http://foobar.lh, Additionally, two subdomains will be available as shortcut to phpMyAdmin and Mailhog respectively:
 
-* http://mail.foobar.dev
-* http://db.foobar.dev
+* http://mail.foobar.lh
+* http://db.foobar.lh
+
+## Why another boilerplate?
+
+[VVV](https://github.com/Varying-Vagrant-Vagrants/VVV) is a fantastic Vagrant setup, where much of the provisioning of this setup is based on. However, VVV provides lot of things out of the box which I don't necessarily require in my development workflow, plus it is catered more on WordPress development. On the other hand, I would only need a simple LEMP stack, that also works well on my Windows machine.
+
 
 ## Credits
 
