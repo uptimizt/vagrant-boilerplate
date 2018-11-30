@@ -9,7 +9,7 @@ Vagrant.configure(2) do |config|
   # Store directory name as reference to sitename
   vagrant_sitename = File.basename(Dir.pwd); #taken from VVV
   vagrant_domain = "#{vagrant_sitename}.lh"
-  vagrant_ip = "192.168.32." + rand(256).to_s
+  vagrant_ip = "192.168.32." + rand(200).to_s
 
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
@@ -28,6 +28,7 @@ Vagrant.configure(2) do |config|
   # using a specific IP.
   config.vm.network "private_network", ip: "#{vagrant_ip}"
   config.vm.hostname = "#{vagrant_domain}"
+  # config.hostsupdater.remove_on_suspend = false
   config.hostsupdater.aliases = ["mail.#{vagrant_domain}", "db.#{vagrant_domain}"]
 
   # Create a public network, which generally matched to bridged network.

@@ -3,7 +3,7 @@
 This is a personal Vagrant setup that I use for each project that I manage. It's basic LEMP stack on Ubuntu 16.04 with a few additions such as Composer, Node.js and WP-CLI ready at the get-go.
 
 
-## Requirement
+# Requirement
 
 * [VirtualBox](https://www.virtualbox.org/)
 * [Vagrant](https://www.vagrantup.com/)
@@ -15,7 +15,7 @@ _Note: Vagrant::Hostsupdater is optional to automatically add the entry to the h
 > **If you are using Windows, you may need to enable hardware virtualization (VT-x). It can usually be enabled via your BIOS. If you are using Hyper-V on a UEFI system you may additionally need to disable Hyper-V in order to access VT-x.**
 
 
-## Usage
+# Usage
 
 ```
 git clone https://github.com/fsylum/vagrant-boilerplate <project-name>
@@ -25,7 +25,7 @@ vagrant up
 
 All Vagrant commands like `vagrant halt`, `vagrant destroy` and `vagrant suspend` are applicable.
 
-## Credentials
+# Credentials
 
 MySQL root:
 
@@ -37,6 +37,17 @@ Additional MySQL access:
 **User**: `vagrant`
 **Password**: `password`
 **Database**: `vagrant`
+
+# FAQ
+
+## How disable password for everyday start VM on macOS and Linux?
+
+For add domains in /etc/hosts - need sudo password.
+You can change Vagrantfile, replace random on static ip address
+After that uncomment the command:
+```
+# config.hostsupdater.remove_on_suspend = false
+```
 
 ## What's Included?
 
